@@ -54,9 +54,22 @@ Paso 4: Al terminar de recorrer la lista retorna el numero mayor de la lista
 */
 
 // -------------------- Ejercicio 3------------------------
-function ej3() {}
+function ej3CalcularMedia(arrayMedia) {
+  let suma = 0;
 
-/* Explicacion de ejercicio 3: */
+  arrayMedia.forEach((numero) => {
+    suma += numero;
+  });
+  return suma / arrayMedia.length;
+}
+
+/* Explicacion del ejercicio 3:
+Paso 1: Creo una función que reciba un array como parámetro
+Paso 2: Creo una variable suma y la inicializo en 0
+Paso 3: Utilizo un forEach para iterar los elementos.
+        En cada iteración tomo el valor actual y lo sumo a la variable suma
+Paso 4: Por último divido la suma entre la longitud del array
+*/
 
 // -------------------- Ejercicio 4------------------------
 function ej4() {}
@@ -90,12 +103,15 @@ console.log(
 
 //Ejercicio 2
 console.log("-------Prueba ejercicio 2-------");
-console.log("Máximo número de la lista", ej2MaxNumero([1, 2, 3, 6, 7]));
-console.log("Máximo número de la lista", ej2MaxNumero([-10, -5, -1]));
-console.log("Máximo número de la lista", ej2MaxNumero([10, 5, 17, 3, 28]));
+console.log("Máximo número de la lista:", ej2MaxNumero([1, 2, 3, 6, 7]));
+console.log("Máximo número de la lista:", ej2MaxNumero([-10, -5, -1]));
+console.log("Máximo número de la lista:", ej2MaxNumero([10, 5, 17, 3, 28]));
 
 //Ejercicio 3
 console.log("-------Prueba ejercicio 3-------");
+console.log("La media es:", ej3CalcularMedia([10, 20, 30, 40]));
+console.log("La media es:", ej3CalcularMedia([50, 100, 150]));
+console.log("La media es:", ej3CalcularMedia([7, 7, 4, 6, 8]));
 
 //Ejercicio 4
 console.log("-------Prueba ejercicio 4-------");
