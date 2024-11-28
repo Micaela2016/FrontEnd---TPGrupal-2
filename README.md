@@ -79,5 +79,5 @@ Este proyecto consiste en resolver una serie de ejercicios utilizando JavaScript
 ## **Contacto**
 - Grupo 14
 - Alumnas: Verónica Olate, Sofía Pereyra y Micaela Orellano
-- Repositorio: [Enlace al repositorio de GitHub](https://github.com/Micaela2016/FrontEnd-TPGrupal-2)
-- Sitio Deployado:
+- Repositorio: [https://github.com/Micaela2016/FrontEnd-TPGrupal-2](https://github.com/Micaela2016/FrontEnd-TPGrupal-2)
+- Sitio Deployado: [https://micaela2016.github.io/FrontEnd-TPGrupal-2/](https://micaela2016.github.io/FrontEnd-TPGrupal-2/)
