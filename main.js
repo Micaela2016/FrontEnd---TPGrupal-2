@@ -35,9 +35,23 @@ Paso 6: Al terminar de recorrer la palabra retornar el resultado de la suma
 */
 
 // -------------------- Ejercicio 2------------------------
-function ej2() {}
+function ej2MaxNumero(arrayNumeros) {
+  let maxNumero = arrayNumeros[0];
 
-/* Explicacion de ejercicio 2:  */
+  arrayNumeros.forEach((numero) => {
+    if (numero > maxNumero) {
+      maxNumero = numero;
+    }
+  });
+  return maxNumero;
+}
+
+/* Explicacion de ejercicio 2:
+Paso 1: Creo una función que reciba un array como argumento
+Paso 2: Inicializo una variable para guardar el número más alto
+Paso 3: Uso forEach para comparar cada elemento con el valor guardado
+Paso 4: Al terminar de recorrer la lista retorna el numero mayor de la lista
+*/
 
 // -------------------- Ejercicio 3------------------------
 function ej3() {}
@@ -76,6 +90,9 @@ console.log(
 
 //Ejercicio 2
 console.log("-------Prueba ejercicio 2-------");
+console.log("Máximo número de la lista", ej2MaxNumero([1, 2, 3, 6, 7]));
+console.log("Máximo número de la lista", ej2MaxNumero([-10, -5, -1]));
+console.log("Máximo número de la lista", ej2MaxNumero([10, 5, 17, 3, 28]));
 
 //Ejercicio 3
 console.log("-------Prueba ejercicio 3-------");
@@ -87,7 +104,7 @@ console.log("-------Prueba ejercicio 4-------");
 console.log("-------Prueba ejercicio 5-------");
 
 //Ejercicio 6
-console.log("-------Prueba ejercicio 5-------");
+console.log("-------Prueba ejercicio 6-------");
 
 //Ejercicio 7
-console.log("-------Prueba ejercicio 5-------");
+console.log("-------Prueba ejercicio 7-------");
