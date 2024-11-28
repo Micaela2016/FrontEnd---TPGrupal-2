@@ -72,14 +72,24 @@ Paso 4: Por último divido la suma entre la longitud del array
 */
 
 // -------------------- Ejercicio 4------------------------
-function ej4() {}
+function invertirArray(array) {
+  const arrayInvertido = array.reverse();
+  return arrayInvertido;
+}
 
-/* Explicacion de ejercicio 4:  */
+/* Esta función devuelve un arreglo invertido en su orden secuencial. Para que funcione, debe recibir un arreglo por parámetro
+y luego usando el método de Javascript "reverse" invierto ese arreglo y lo guardo en la variable arrayinvertido  */
 
 // -------------------- Ejercicio 5------------------------
-function ej5() {}
+function eliminarDuplicados(array) {
+  const elementosUnicos = [...new Set(array)];
+  return elementosUnicos;
+}
 
-/* Explicacion de ejercicio 5: */
+/* al igual que en el ejercicio anterior, la funcion recibe un arreglo por parámetro."Set" en Javascript es una estructura
+de datos que no permite elementos repetidos, asique cree una nueva instancia con la palabra "new", le paso el arreglo por parámetro
+para que elimine los elementos repetidos, y con los "..." le pido que esos elementos los transforme en un arreglo. Todo eso lo guardo
+en la variable elementosUnicos para que luego la función me devuelva al array sin elementos repetidos  */
 
 // -------------------- Ejercicio 6------------------------
 function ej6() {}
@@ -114,10 +124,20 @@ console.log("La media es:", ej3CalcularMedia([50, 100, 150]));
 console.log("La media es:", ej3CalcularMedia([7, 7, 4, 6, 8]));
 
 //Ejercicio 4
-console.log("-------Prueba ejercicio 4-------");
+console.log(invertirArray([5, 6, 7, 8]));
+
+console.log(invertirArray(["a", "b", "c", "d"]));
+
+console.log(invertirArray(["lobo", "perro", "puma", "pelícano"]));
 
 //Ejercicio 5
-console.log("-------Prueba ejercicio 5-------");
+console.log(eliminarDuplicados([5, 5, 6, 7, 8, 8]));
+
+console.log(eliminarDuplicados(["a", "b", "c", "d", "a", "b", "c", "d"]));
+
+console.log(
+  eliminarDuplicados(["libro", "libro", "puma", "telescopio", "puma"])
+);
 
 //Ejercicio 6
 console.log("-------Prueba ejercicio 6-------");
